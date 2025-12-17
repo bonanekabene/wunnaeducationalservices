@@ -1,0 +1,219 @@
+.layout-container .login_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.layout-container .login_container .login_img {
+    width: 30%;
+}
+
+.layout-container .login_container img {
+    width: 100%;
+
+}
+
+.layout-container .login_container .login_form {
+    width: 40%;
+    /* padding: 50px; */
+    background: #fff;
+    height: 462px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.login_container .login_form .tabs {
+    display: flex;
+    margin-bottom: 0px;
+}
+
+.login_container .login_form .tabs button {
+    flex: 1;
+    padding: 20px;
+    border: none;
+    background: #b5d5b9;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    color: #072e0c;
+}
+
+.login_container .login_form .tabs button.active {
+    background: #0BBC22;
+    color: #fff;
+}
+
+.login_container .login_form .form {
+    display: none;
+    padding: 20px;
+}
+
+.login_container .login_form .form.active {
+    display: block;
+}
+
+.login_container .login_form .form p {
+    color: #072e0c;
+    font-weight: bold;
+    margin: 4px;
+}
+
+.login_container .login_form .form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.login_container .login_form .form .password {
+    margin-top: 25px;
+}
+
+.login_container .login_form .form .password .show_password {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 1px solid #b5d5b9;
+}
+
+.login_container .login_form .form .password .show_password input {
+    border: none;
+}
+
+/* .login_container .login_form .form input:focus{
+    outline: 1px solid #0BBC22;
+} */
+
+.login_container .login_form .form .password .show_password i {
+    margin-right: 10px;
+    color: #072e0c;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.login_container .login_form .form .forget_password {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* error Message  */
+.login_container .login_form .form .errorMessage {
+    color: red;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.login_container .login_form .form button {
+    width: 30%;
+    margin-top: 30px;
+    float: right;
+    padding: 15px;
+    font-weight: bold;
+    background: #0BBC22;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Signup Form Styles */
+.layout-container .login_form .signup-form {}
+
+.layout-container .signup-form {
+    margin-top: 0px;
+}
+
+.layout-container .signup-form .signup_break {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.layout-container .signup-form .signup_break .username {
+    width: 50%;
+}
+
+.layout-container .signup-form .signup_email {
+    margin-top: 15px;
+}
+
+.layout-container .signup-form .signup_break .username input {
+    width: 100%;
+}
+
+.layout-container .signup-form .signup_break .password {
+    width: 50%;
+    margin-top: 0px;
+}
+
+.layout-container .signup-form .signup_break .username {
+    width: 50%;
+}
+
+.login_container .signup-form button {
+    width: 100%;
+    margin-top: 0px;
+}
+
+
+/* media query  */
+@media (max-width: 992px) {
+    .layout-container .login_container .login_img {
+        display: none;
+        width: 100%;
+    }
+
+    .layout-container .login_container .login_form {
+        width: 50%;
+    }
+}
+
+@media (max-width: 700px){
+    .layout-container .login_container .login_form {
+        width: 80%;
+    }
+}
+
+
+
+@media (max-width: 500px){
+    .layout-container .login_container .login_form {
+        width: 100%;
+        height: auto;
+    }
+
+    .login_container .login_form .tabs button {
+    padding: 10px;
+}
+
+.layout-container .signup-form .signup_break {
+    flex-direction: column;
+    justify-self: unset;
+    align-items: unset;
+    width: 100%;
+}
+
+.layout-container .signup-form .signup_break .username {
+    width: 100%;
+}
+
+.layout-container .signup-form .signup_break .password {
+    width: 100%;
+}
+}
+
+
+@media (max-width: 320px){
+    .layout-container .login_container .login_form {
+        width: 100%;
+        height: 520px;
+    }
+
+    .login_container .login_form .tabs button {
+    padding: 5px;
+}
+}

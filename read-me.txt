@@ -1,0 +1,6 @@
+dont add similar files for confusion
+use login.html setup for pages without sidebar
+use any language of your choice, with bootstarp issues use !important to consider your styles
+
+
+This is what we call documenting bro. You really work on it. I have seen all the files 

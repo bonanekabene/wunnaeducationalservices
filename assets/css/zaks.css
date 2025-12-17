@@ -1,0 +1,135 @@
+.filter-types {
+  border-radius: 5px !important;
+}
+.filter-types .types li {
+  background: #072e0c !important;
+  padding: 10px 20px !important;
+  margin-right: 20px !important;
+  color: white !important;
+  font-weight: bold !important;
+}
+.filter-types .types li.active {
+  background: #0BBC22 !important;
+}
+.filter-types .types li:hover {
+  background: #0BBC22 !important;
+}
+@media (max-width: 992px) {
+  .filter-types .types li {
+    margin-right: 0px !important;
+    width: 100% !important;
+    margin-bottom: 10px !important;
+  }
+}
+.filter-types .types li a {
+  color: white !important;
+}
+.filter-types form {
+  background: white !important;
+  padding: 5px 10px !important;
+  border-radius: 30px !important;
+}
+.filter-types form input {
+  background: none !important;
+  border: none !important;
+  outline: none !important;
+  width: 100% !important;
+  flex-grow: 1 !important;
+}
+.filter-types form button {
+  background: #0BBC22 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border: none !important;
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 50%;
+  margin-left: 5px !important;
+}
+
+.modal-types {
+  top: 10% !important;
+}
+@media (max-width: 992px) {
+  .modal-types {
+    top: 0 !important;
+  }
+}
+.modal-types .modal-body {
+  overflow-y: scroll !important;
+  height: 400px !important;
+}
+.modal-types nav li {
+  background: #072e0c !important;
+  padding: 10px 20px !important;
+  margin-bottom: 10px !important;
+  color: white !important;
+  font-weight: bold !important;
+  width: 100% !important;
+  text-align: center !important;
+}
+.modal-types nav li.active {
+  background: #0BBC22 !important;
+}
+.modal-types nav li:hover {
+  background: #0BBC22 !important;
+}
+@media (max-width: 992px) {
+  .modal-types nav li {
+    margin-right: 0px !important;
+    width: 100%;
+    margin-bottom: 10px !important;
+  }
+}
+.modal-types nav li a {
+  color: white !important;
+  text-align: center !important;
+}
+
+.modal-levels {
+  top: 0% !important;
+}
+.modal-levels .modal-body {
+  overflow-y: scroll !important;
+  height: 400px !important;
+}
+.modal-levels nav li.active span {
+  background: #072e0c !important;
+}
+.modal-levels nav li span {
+  background: #0BBC22 !important;
+  color: white !important;
+}
+.modal-levels nav li span:hover {
+  background: #072e0c !important;
+}
+.modal-levels nav li .sub-levels {
+  display: none !important;
+  margin-left: 10px !important;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+.modal-levels nav li .sub-levels li::before {
+  content: "-";
+  margin-right: 10px !important;
+}
+.modal-levels nav li .sub-levels li a {
+  color: #072e0c !important;
+}
+.modal-levels nav li .sub-levels li a:hover {
+  color: #0BBC22 !important;
+}
+.modal-levels nav li.active .sub-levels {
+  display: block !important;
+}
+@media (max-width: 992px) {
+  .modal-levels nav li {
+    margin-right: 0px !important;
+    width: 100%;
+    margin-bottom: 10px !important;
+  }
+}
+.modal-levels nav li a {
+  color: white !important;
+}/*# sourceMappingURL=zaks.css.map */
