@@ -1,2 +1,2 @@
 # wunnaeducationalservices
-updating the UI of https://wunnaeducationalservices.com/ by bonane kabene
+updating the UI of wunnaeducationalservices  by bonane kabene
