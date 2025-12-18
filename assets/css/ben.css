@@ -57,7 +57,7 @@
 .login_container .login_form .form p {
     color: #072e0c;
     font-weight: bold;
-    margin: 4px;
+    margin-bottom: -3px;
 }
 
 .login_container .login_form .form input {
@@ -118,8 +118,7 @@
 
 
 /* Signup Form Styles */
-.layout-container .login_form .signup-form {}
-
+/* .layout-container .login_form .signup-form {} */
 .layout-container .signup-form {
     margin-top: 0px;
 }
@@ -160,6 +159,174 @@
 }
 
 
+/* ********************************************************* */
+/* market section  */
+/* ********************************************************* */
+.market_container {
+    width: 100%;
+
+    /* comment to take full width */
+    margin: 40px;
+}
+
+.market_container .market_banner {
+    background: #fff;
+    padding: 20px;
+    width: 100%;
+
+    /*  */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.market_container .market_banner .welcome h2 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    color: #000;
+}
+
+.market_container .market_banner .welcome h1 {
+    text-align: center;
+    font-size: 52px;
+    font-weight: bold;
+    color: #0BBC22;
+}
+
+.market_container .market_conta {
+    margin-top: 40px;
+    border: 2px solid #0BBC22;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.market_container .market_conta .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.market_container .market_conta .navigation .navigate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.market_container .market_conta .navigation .navigate a p {
+    background: #fff;
+    padding: 10px 30px;
+    font-weight: bold;
+    color: #000;
+    border: 1px solid #ccc;
+}
+
+.market_container .market_conta .navigation .navigate a p:hover {
+    background: #0BBC22;
+    color: #fff;
+    border: none;
+}
+
+.market_container .market_conta .navigation .navigate a .active {
+    background: #0BBC22;
+    color: #fff;
+    border: none;
+}
+
+.market_container .market_conta .navigation .navigate a p span {
+    color: #0BBC22;
+    margin-left: 10px;
+}
+
+.market_container .market_conta .navigation .navigate a p:hover span {
+    color: #fff;
+}
+
+/* .market_container .market_conta .navigation .navigate a .active:hover{
+    background: #fff;
+    color: #0BBC22;
+    border: none;
+} */
+
+/* ........................... */
+/*  */
+.market_container .market_conta .navigation form {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+
+    /*  */
+    padding: 15px;
+    border-radius: 50px;
+    margin-top: -8px;
+}
+
+.market_container .market_conta .navigation form input {
+    width: 90%;
+    border: none;
+    font-size: 17px;
+    color: #000;
+}
+
+.market_container .market_conta .navigation form label i {
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.market_container .market_conta hr {
+    border: 2px solid #b5d5b9;
+    width: 80%;
+}
+
+
+/* **************************** */
+.market_container .cards_container {
+    margin-top: 20px;
+}
+
+
+.market_container .cards_container .cards_conta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.market_container .cards_container .cards_conta .cards {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: auto 500px;
+}
+
+.market_container .cards_container .cards_conta .cards .card_img {
+    width: 100%;
+}
+
+.market_container .cards_container .cards_conta .cards .card_img img {
+    width: 100%;
+}
+
+.market_container .cards_container .cards_conta .cards .card_details p {
+    margin: 0px;
+}
+
+
+
+
+
+
+
+
+
+
 /* media query  */
 @media (max-width: 992px) {
     .layout-container .login_container .login_img {
@@ -172,7 +339,7 @@
     }
 }
 
-@media (max-width: 700px){
+@media (max-width: 700px) {
     .layout-container .login_container .login_form {
         width: 80%;
     }
@@ -180,40 +347,52 @@
 
 
 
-@media (max-width: 500px){
+@media (max-width: 500px) {
     .layout-container .login_container .login_form {
         width: 100%;
         height: auto;
     }
 
     .login_container .login_form .tabs button {
-    padding: 10px;
-}
+        padding: 10px;
+    }
 
-.layout-container .signup-form .signup_break {
-    flex-direction: column;
-    justify-self: unset;
-    align-items: unset;
+    .layout-container .signup-form .signup_break {
+        flex-direction: column;
+        justify-self: unset;
+        align-items: unset;
+        width: 100%;
+    }
+
+    .layout-container .signup-form .signup_break .username {
+        width: 100%;
+    }
+
+    .layout-container .signup-form .signup_break .password {
+        width: 100%;
+    }
+
+    .login_container .login_form .form button {
     width: 100%;
 }
-
-.layout-container .signup-form .signup_break .username {
-    width: 100%;
-}
-
-.layout-container .signup-form .signup_break .password {
-    width: 100%;
-}
 }
 
 
-@media (max-width: 320px){
+@media (max-width: 320px) {
+    .layout-container .login_container {
+    padding: 15px;
+}
+
     .layout-container .login_container .login_form {
         width: 100%;
-        height: 520px;
+        height: auto 100%;
     }
 
     .login_container .login_form .tabs button {
-    padding: 5px;
+        padding: 5px;
+    }
+
+    .login_container .login_form .tabs button {
+    padding: 10px;
 }
 }
