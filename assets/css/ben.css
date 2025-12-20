@@ -164,9 +164,11 @@
 /* ********************************************************* */
 .market_container {
     width: 100%;
-
-    /* comment to take full width */
-    margin: 40px;
+    padding: 40px;
+    /* ✅ use padding instead */
+    margin: 0;
+    /* ✅ remove margin */
+    box-sizing: border-box;
 }
 
 .market_container .market_banner {
@@ -319,6 +321,349 @@
 }
 
 
+.market_container .cards_container .cards_conta .cards {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: auto 500px;
+}
+
+
+/* Swiper styles */
+.swiper {
+    width: 100% !important;
+
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .card {
+    background: white;
+    height: 40vh;
+    width: 80%;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .2);
+} */
+
+.swiper .swiper-slide .cards {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: auto 500px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #38bfc3;
+}
+
+/* Remove default arrows */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none;
+}
+
+/* Modern navigation buttons */
+.custom-nav {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #38bfc3;
+    font-size: 26px;
+    font-weight: 600;
+
+    transition: all 0.25s ease;
+}
+
+/* Hover effect */
+.custom-nav:hover {
+    background: #38bfc3;
+    color: #0f172a;
+    transform: scale(1.08);
+}
+
+/* Active (click) effect */
+.custom-nav:active {
+    transform: scale(0.95);
+}
+
+
+
+/* ********************************************** */
+.donate_container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* background: red; */
+    gap: 3px;
+}
+
+.donate_container .donate_img {
+    width: 30%;
+}
+
+.donate_container .donate_img img {
+    width: 100%;
+    height: 65vh;
+}
+
+.donate_container form {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    background: #fff;
+    width: 30%;
+    height: 65vh;
+}
+
+.donate_container form .donate_text {
+    background: #0BBC22;
+    padding: 10px;
+}
+
+.donate_container form .donate_text h1 {
+    color: #fff;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.donate_container form .form_data {
+    padding: 20px;
+}
+
+.donate_container form .form_data p {
+    margin-bottom: 4px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.donate_container form .form_data input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.donate_container form .form_data input[type="submit"] {
+    width: 35%;
+    background: #0BBC22;
+    margin-top: 25px;
+    border: none;
+    float: right;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+
+/* ******************************************** */
+.contact_container {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 20px;
+
+    /*  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact_container .contact_us {
+    width: 30%;
+}
+
+.contact_container .contact_us .contact_us_card {
+    background: #072e0c;
+    padding: 20px;
+    width: 100%;
+    border-radius: 8px;
+
+    /*  */
+    display: flex;
+    justify-content: flex-start;
+    gap: 6px;
+}
+
+.contact_container .contact_us .contact_us_card .contact_icon i {
+    color: #0BBC22;
+    background: #fff;
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 26px;
+
+
+    /*  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_container .contact_us .contact_us_card .details {
+    margin-left: 15px;
+}
+
+.contact_container .contact_us .contact_us_card .details p {
+    color: #fff;
+}
+
+.contact_container .contact_us .contact_us_card .details h1 {
+    color: #fff;
+    font-size: 16px;
+}
+
+/*  */
+.contact_container form {
+    width: 30%;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    height: 52vh;
+}
+
+.contact_container form .message_text {
+    background: #0BBC22;
+    padding: 10px;
+}
+
+
+.contact_container form .message_text h1 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.contact_container form .msg_data {
+    padding: 10px;
+}
+
+.contact_container form .msg_data span {
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.contact_container form .msg_data p {
+    margin-top: 7px;
+    margin-bottom: 0px;
+}
+
+.contact_container form .msg_data input {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.contact_container form .msg_data textarea {
+    width: 100%;
+    resize: none;
+}
+
+.contact_container form .msg_data input[type="submit"] {
+    margin-top: 10px;
+    background: #0BBC22;
+    border: none;
+    color: #fff;
+    padding: 8px;
+    cursor: pointer;
+}
+
+/* ******************************************************* */
+/* team section  */
+.our_team_conta {
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.our_team_conta .team_text h1 {
+    text-align: center;
+    color: #072e0c;
+    font-weight: bold;
+    font-size: 42px;
+}
+
+.our_team_conta .team_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    /*  */
+    width: 100%;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.our_team_conta .team_container .team_cards {
+    width: 40%;
+    height: auto;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+    /*  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our_team_conta .team_container .team_cards .team_img {
+    width: 50%;
+    overflow: hidden;
+}
+
+
+.our_team_conta .team_container .team_cards .team_img img {
+    width: 100%;
+    height: auto;
+}
+
+.our_team_conta .team_container .team_cards .team_details {
+    width: 50%;
+    padding: 20px;
+}
+
+.our_team_conta .team_container .team_cards .team_details h2 {
+    color: #0BBC22;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.our_team_conta .team_container .team_cards .team_details p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.our_team_conta .team_container .team_cards .team_details span {
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+
 
 
 
@@ -337,12 +682,71 @@
     .layout-container .login_container .login_form {
         width: 50%;
     }
+
+    .donate_container .donate_img {
+        display: none;
+    }
+
+    .donate_container form {
+        width: 50%;
+        height: auto;
+
+    }
+
+    .donate_container form .form_data input[type="submit"] {
+        width: 100%;
+    }
+
+    .contact_container .contact_us {
+        width: 50%;
+    }
+
+    .contact_container form {
+        width: 50%;
+        height: auto;
+    }
+
+    .our_team_conta .team_container .team_cards{
+    width: 100%;
+    margin: 30px;
+}
+
+.our_team_conta .team_container .team_cards .team_img {
+    width: 100%;
+}
+
+.our_team_conta .team_container .team_cards .team_details {
+    width: 100%;
+    padding: 20px;
+}
 }
 
 @media (max-width: 700px) {
     .layout-container .login_container .login_form {
         width: 80%;
     }
+
+    .donate_container form {
+        width: 90%;
+    }
+
+    .contact_container {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .contact_container .contact_us {
+        width: 80%;
+    }
+
+    .contact_container form {
+        margin-top: 30px;
+        width: 80%;
+        height: auto;
+    }
+
+
+
 }
 
 
@@ -373,15 +777,30 @@
     }
 
     .login_container .login_form .form button {
-    width: 100%;
+        width: 100%;
+    }
+
+    .contact_container .contact_us {
+        width: 90%;
+    }
+
+    .contact_container form {
+        width: 90%;
+    }
+
+.our_team_conta .team_container .team_cards{
+    flex-wrap: wrap;
 }
+
+
+
 }
 
 
 @media (max-width: 320px) {
     .layout-container .login_container {
-    padding: 15px;
-}
+        padding: 15px;
+    }
 
     .layout-container .login_container .login_form {
         width: 100%;
@@ -393,6 +812,12 @@
     }
 
     .login_container .login_form .tabs button {
-    padding: 10px;
-}
+        padding: 10px;
+    }
+
+    .login_container .login_form .tabs button {
+        padding: 5px;
+        font-weight: 100;
+    }
+
 }

@@ -43,3 +43,4 @@ toggleBtn.addEventListener("click", () => {
   toggleBtn.classList.toggle("fa-eye");
   toggleBtn.classList.toggle("fa-eye-slash");
 });
+

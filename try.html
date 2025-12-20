@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Swiper Test</title>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+        body {
+            background: #0f172a;
+            font-family: Arial, sans-serif;
+        }
+
+        .swiper {
+            width: 100%;
+            margin: 80px auto;
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background: white;
+            height: 40vh;
+            width: 80%;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, .2);
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #38bfc3;
+        }
+
+        /* Remove default arrows */
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            display: none;
+        }
+
+        /* Modern navigation buttons */
+        .custom-nav {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            color: #38bfc3;
+            font-size: 26px;
+            font-weight: 600;
+
+            transition: all 0.25s ease;
+        }
+
+        /* Hover effect */
+        .custom-nav:hover {
+            background: #38bfc3;
+            color: #0f172a;
+            transform: scale(1.08);
+        }
+
+        /* Active (click) effect */
+        .custom-nav:active {
+            transform: scale(0.95);
+        }
+
+        /* Position tweaks */
+        .swiper-button-prev {
+            left: 10px;
+        }
+
+        .swiper-button-next {
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="card">Card 1</div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card">Card 2</div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card">Card 3</div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card">Card 4</div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-prev custom-nav">
+            <span>‹</span>
+        </div>
+        <div class="swiper-button-next custom-nav">
+            <span>›</span>
+        </div>
+
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        new Swiper(".mySwiper", {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 20,
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            breakpoints: {
+                640: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+            },
+        });
+    </script>
+
+</body>
+
+</html>
