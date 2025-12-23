@@ -237,7 +237,7 @@
 }
 
 .market_container .market_conta .navigation .navigate a p span {
-    color: #0BBC22;
+    color: #000;
     margin-left: 10px;
 }
 
@@ -261,7 +261,7 @@
     width: 40%;
 
     /*  */
-    padding: 15px;
+    padding: 10px;
     border-radius: 50px;
     margin-top: -8px;
 }
@@ -274,19 +274,24 @@
 }
 
 .market_container .market_conta .navigation form label i {
-    padding: 15px;
+    padding: 10px;
     border-radius: 50%;
+}
+
+.market_container .market_conta .navigation form label i:hover {
+    color: #0BBC22;
+    cursor: pointer;
 }
 
 .market_container .market_conta hr {
     border: 2px solid #b5d5b9;
-    width: 80%;
+    width: 100%;
 }
 
 
 /* **************************** */
 .market_container .cards_container {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 
@@ -322,14 +327,44 @@
 
 
 .market_container .cards_container .cards_conta .cards {
-    background-color: #fff;
+    background: #fff;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
     height: auto 500px;
+    gap: 10px;
 }
+
+.market_container .cards_container .cards_conta .cards h2{
+    color: #0f172a;
+    font-weight: bold;
+}
+
+.market_container .cards_container .cards_conta .cards .subject{
+    color: #0BBC22;
+    font-weight: bold;
+}
+
+.market_container .cards_container .cards_conta .cards .author{
+    color: #0BBC22;
+    font-weight: bold;
+}
+
+.market_container .cards_container .cards_conta .cards .date{
+    color: #0f172a;
+    font-weight: bold;
+}
+
+.market_container .cards_container .cards_conta .cards a p{
+    color: #fff;
+    font-weight: bold;
+    background: #0BBC22;
+    text-align: center;
+    font-size: 14px;
+}
+
 
 
 /* Swiper styles */
@@ -698,28 +733,68 @@
     }
 
     .contact_container .contact_us {
-        width: 50%;
+        width: 100%;
     }
 
     .contact_container form {
-        width: 50%;
+        width: 100%;
         height: auto;
     }
 
-    .our_team_conta .team_container .team_cards{
-    width: 100%;
-    margin: 30px;
+    .our_team_conta .team_container .team_cards {
+        width: 100%;
+        margin: 30px;
+    }
+
+    .our_team_conta .team_container .team_cards .team_img {
+        width: 100%;
+    }
+
+    .our_team_conta .team_container .team_cards .team_details {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .market_container .market_conta .navigation {
+        flex-wrap: wrap;
+        justify-content: center;
 }
 
-.our_team_conta .team_container .team_cards .team_img {
-    width: 100%;
+.market_container .market_conta .navigation form {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-top: 20px;
 }
 
-.our_team_conta .team_container .team_cards .team_details {
-    width: 100%;
-    padding: 20px;
+.market_container .cards_container .cards_conta{
+    flex-wrap: wrap;
 }
+
+.market_container .cards_container .cards_conta .cards {
+    width: 50%;
+} 
+
+.market_container .cards_container .cards_conta .cards .card_img {
+    width: 50%;
 }
+
+.market_container .cards_container .cards_conta .cards {
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+.market_container .cards_container .cards_conta .cards .card_details{
+    padding: 10px;
+}
+
+
+}
+
+
+
 
 @media (max-width: 700px) {
     .layout-container .login_container .login_form {
@@ -744,6 +819,30 @@
         width: 80%;
         height: auto;
     }
+
+    .contact_container form .msg_data p {
+        margin-top: 20px;
+    }
+
+    .contact_container form .msg_data input[type="submit"] {
+        margin-bottom: 30px;
+    }
+
+    .contact_container .contact_us .contact_us_card .details p {
+        color: #fff;
+        font-size: 14px;
+    }
+
+    .contact_container .contact_us .contact_us_card .details h1 {
+        color: #fff;
+        font-size: 14px;
+        margin-top: -7px;
+    }
+
+
+
+
+
 
 
 
@@ -788,9 +887,9 @@
         width: 90%;
     }
 
-.our_team_conta .team_container .team_cards{
-    flex-wrap: wrap;
-}
+    .our_team_conta .team_container .team_cards {
+        flex-wrap: wrap;
+    }
 
 
 

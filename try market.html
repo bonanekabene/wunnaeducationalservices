@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wunna Market</title>
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #e9f7e9;
+}
+
+/* HERO */
+.hero {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px;
+}
+
+.hero-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero h1 {
+    text-align: center;
+}
+
+.hero h1 span {
+    color: #19b519;
+}
+
+/* FILTER BAR */
+.filter-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e9f7e9;
+    padding: 15px 30px;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+}
+
+.filters button {
+    padding: 10px 18px;
+    border: 1px solid #19b519;
+    background: white;
+    cursor: pointer;
+}
+
+.filters .active {
+    background: #19b519;
+    color: white;
+}
+
+.search-box {
+    display: flex;
+}
+
+.search-box input {
+    padding: 10px;
+    border: 1px solid #19b519;
+    border-right: none;
+}
+
+.search-box button {
+    padding: 10px;
+    background: #19b519;
+    border: none;
+    color: white;
+}
+
+/* SECTIONS */
+.section {
+    padding: 30px;
+}
+
+.section h2 {
+    margin-bottom: 15px;
+}
+
+/* CARD */
+.card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.card .category {
+    color: green;
+    font-weight: bold;
+}
+
+.card .price {
+    color: red;
+    font-weight: bold;
+}
+
+.card button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    background: #19b519;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* LOAD MORE */
+.load-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.load-more button {
+    padding: 12px 25px;
+    background: #0b3d0b;
+    color: white;
+    border: none;
+}
+
+    </style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<section class="hero">
+    <div class="hero-inner">
+        <img src="https://picsum.photos/120/160?random=1" alt="">
+        <h1>WELCOME TO <br><span>WUNNA MARKET.</span></h1>
+        <img src="https://picsum.photos/120/160?random=2" alt="">
+    </div>
+</section>
+
+<!-- ===== FILTER BAR ===== -->
+<section class="filter-bar">
+    <div class="filters">
+        <button class="active">ALL</button>
+        <button>BOOKS (20k)</button>
+        <button>SCHOOL MATERIALS (15k)</button>
+    </div>
+
+    <div class="search-box">
+        <input type="text" placeholder="Search for anything">
+        <button>🔍</button>
+    </div>
+</section>
+
+<!-- ===== NEW BOOKS ===== -->
+<section class="section">
+    <h2>New Books</h2>
+
+    <div class="swiper booksSwiper">
+        <div class="swiper-wrapper">
+
+            <!-- CARD -->
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="https://picsum.photos/200/250?random=3">
+                    <h3>Secondary Physical Education Learner's book: S.1</h3>
+                    <p class="category">PHYSICS</p>
+                    <p>Author: Mr Kato</p>
+                    <small>12th November, 2025</small>
+                    <button>ORDER NOW</button>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="https://picsum.photos/200/250?random=4">
+                    <h3>Secondary Physical Education Learner's book: S.1</h3>
+                    <p class="category">PHYSICS</p>
+                    <p>Author: Mr Kato</p>
+                    <small>12th November, 2025</small>
+                    <button>ORDER NOW</button>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="https://picsum.photos/200/250?random=5">
+                    <h3>Secondary Physical Education Learner's book: S.1</h3>
+                    <p class="category">PHYSICS</p>
+                    <p>Author: Mr Kato</p>
+                    <small>12th November, 2025</small>
+                    <button>ORDER NOW</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ===== SCHOOL MATERIALS ===== -->
+<section class="section">
+    <h2>New School Materials</h2>
+
+    <div class="swiper materialsSwiper">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="https://picsum.photos/260/180?random=6">
+                    <h3>Box of pens and 1 dozen of books</h3>
+                    <p class="price">50,000/=</p>
+                    <button>ORDER NOW</button>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="https://picsum.photos/260/180?random=7">
+                    <h3>Box of pens and 1 dozen of books</h3>
+                    <p class="price">50,000/=</p>
+                    <button>ORDER NOW</button>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="https://picsum.photos/260/180?random=8">
+                    <h3>Box of pens and 1 dozen of books</h3>
+                    <p class="price">50,000/=</p>
+                    <button>ORDER NOW</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="load-more">
+        <button>LOAD MORE</button>
+    </div>
+</section>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
+<script>
+    new Swiper(".booksSwiper", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop: true,
+    breakpoints: {
+        0: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 }
+    }
+});
+
+new Swiper(".materialsSwiper", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop: true,
+    breakpoints: {
+        0: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 }
+    }
+});
+
+</script>
+
+</body>
+</html>
